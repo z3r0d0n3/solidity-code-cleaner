@@ -2,7 +2,7 @@
 
 simple web tool used to remove comments from solidity code
 
-why? because you cand verify your code on harmony network with comments
+why? because you cant verify your code on harmony network with comments
 
 todo:
     nice styling
