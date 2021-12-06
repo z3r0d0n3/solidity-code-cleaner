@@ -4,12 +4,6 @@ simple web tool used to remove comments from solidity code
 
 why? because you cant verify your code on harmony network with comments
 
-todo:
-    nice styling
-    remove new lines too
-    add flatten feature
-
-
 ## TODO
 
 - nice styling
