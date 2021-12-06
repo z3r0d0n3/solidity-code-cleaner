@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<body>
+
+<textarea id="textarea" style="width: 45%; height: 400px;"></textarea>
+<textarea id="cleanarea" style="width: 45%; height: 400px;" disabled></textarea>
+<button id="remove">remove comments</button>
+
+<script>    
+    console.log(textarea)
+    const regexp = new RegExp(/((?:\/\*(?:[^*]|(?:\*+[^*\/]))*\*+\/)|(?:\/\/.*))/,'g');
+
+    const remove = document.getElementById('remove').onclick = function () {
+        document.getElementById('cleanarea').value = document.getElementById('textarea').value.replace(regexp, '')
+        cleanarea.select();
+        cleanarea.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(cleanarea.value);
+        alert("Copied the cleaned code to clipbaord");
+        
+    }
+
+</script>
+</body>
+</html> 
